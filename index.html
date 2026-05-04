@@ -3,98 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shree Vinayak Surgical | Precision & Care</title>
+    <title>Shree Vinayak Surgical | Trusted Medical Supplies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            SHREE VINAYAK
+
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo-link">
+                <!-- Fallback typographic logo if AI image isn't clear -->
+                <div class="logo-text">
+                    <span class="logo-shree">SHREE</span>
+                    <span class="logo-vinayak">VINAYAK</span>
+                    <span class="logo-surgical">SURGICAL</span>
+                </div>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+919876543210" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
-        <nav class="nav-links">
-            <a href="#about">ABOUT</a>
-            <a href="#products">PRODUCTS</a>
-            <a href="#testimonials">REVIEWS</a>
-        </nav>
-        <a href="#contact" class="btn-cta">CONTACT US</a>
     </header>
 
     <main>
-        <section class="hero-section">
-            <h1 class="hero-title">PRECISION & CARE</h1>
-            <div class="hero-content">
-                <div class="hero-image-wrapper">
-                    <img src="assets/hero_surgeon.png" alt="Confident Surgeon" class="hero-img">
-                </div>
-                
-                <div class="accent-box pink-box">
-                    <h2 class="accent-title">ADVANCED<br>EQUIPMENT</h2>
-                    <p class="accent-desc">Empowering medical professionals with cutting-edge surgical tools.</p>
-                    <div class="price-tag">TOP TIER</div>
-                    <a href="#products" class="btn-secondary">VIEW CATALOG</a>
-                </div>
-
-                <div class="accent-box blue-box">
-                    <h3 class="blue-title">OUR MISSION</h3>
-                    <p>To provide high-quality, reliable, and precise surgical instruments to ensure the best outcomes for your patients.</p>
-                    <div class="stats">
-                        <div class="stat"><span>15+</span> Years Exp</div>
-                        <div class="stat"><span>10k+</span> Products</div>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Quality • Trust • Care</span>
+                    <h1 class="hero-title">Trusted Surgical & Medical Supplies</h1>
+                    <p class="hero-subtitle">Quality Products for Clinics, Hospitals & Home Care. Wholesale and retail supply with guaranteed reliability.</p>
+                    <div class="hero-buttons">
+                        <a href="tel:+919876543210" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call For Inquiry</a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
                     </div>
                 </div>
-            </div>
-            <div class="background-shape">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="none" stroke="#eb4c36" stroke-width="8" d="M38.1,-46.3C52.7,-35.1,69.9,-25.1,76.5,-10.1C83.1,4.9,79.1,25,67.6,40.1C56.1,55.2,37.1,65.3,17.4,69.5C-2.3,73.8,-22.6,72.2,-40.4,63.1C-58.1,54.1,-73.2,37.6,-77.8,18.8C-82.5,-0.1,-76.7,-21.3,-64.5,-37.2C-52.2,-53,-33.5,-63.5,-16.9,-65.4C-0.3,-67.2,14.3,-60.4,26.5,-51.9Z" transform="translate(100 100)" />
-                </svg>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials-section">
-            <div class="testimonial-header">
-                <h2>TRUSTED BY PROFESSIONALS</h2>
-                <div class="btn-circle">↓</div>
-            </div>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-names">
-                    <div class="name-item active">DR. OLIVIA MITCHELL</div>
-                    <div class="name-item">DR. BENJAMIN HAYES</div>
-                    <div class="name-item">DR. SOPHIA DAVIS</div>
-                    <div class="name-item bold-name">DR. MITCHELL THOMPSON</div>
-                    <div class="name-item">DR. CHIEF SURGEON</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <img src="assets/doctor_testimonial.png" alt="Dr. Olivia Mitchell" class="testimonial-img">
-                    <div class="quote-box">
-                        <p class="quote-text">"Shree Vinayak Surgical has consistently provided top-tier equipment that I rely on for my most complex procedures. Their quality is unmatched."</p>
-                        <div class="quote-author">- Dr. Olivia Mitchell, Head of Surgery</div>
+                <div class="hero-image">
+                    <!-- Placeholder representing a hospital/clinic supply setup -->
+                    <div class="hero-img-box">
+                        <img src="assets/logo.png" alt="Shree Vinayak Surgical Logo" class="hero-logo-display">
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="contact" class="footer-cta">
-            <h2 class="footer-title">ELEVATE YOUR PRACTICE</h2>
-            <p>Get in touch with us today to discuss your surgical equipment needs.</p>
-            <form class="contact-form">
-                <input type="email" placeholder="Your Email Address" required>
-                <button type="submit" class="btn-cta">GET A QUOTE</button>
-            </form>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                    <p>Comprehensive range of high-quality medical supplies.</p>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3>Surgical Instruments</h3>
+                        <p>Precision instruments for all surgical and clinical procedures.</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="order-link">Order via WhatsApp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-pump-medical"></i></div>
+                        <h3>Hospital Equipment</h3>
+                        <p>Durable and advanced equipment for hospital wards and ICUs.</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="order-link">Order via WhatsApp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-box-open"></i></div>
+                        <h3>Medical Disposables</h3>
+                        <p>Sterile syringes, gloves, masks, and essential daily disposables.</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="order-link">Order via WhatsApp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Healthcare Products</h3>
+                        <p>BP monitors, glucometers, thermometers, and home care devices.</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="order-link">Order via WhatsApp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p><strong>Shree Vinayak Surgical</strong> is a family-owned business dedicated to providing top-tier surgical instruments, hospital equipment, and medical disposables to the healthcare community in Ujjain and beyond.</p>
+                    <p>With a foundation built on <strong>Trust, Reliability, and Quality Service</strong>, we understand that in healthcare, there is no room for compromise. Whether you are a large hospital, a specialized clinic, or a local customer seeking home care products, we ensure a reliable supply of genuine products at highly competitive prices.</p>
+                    
+                    <div class="trust-markers">
+                        <div class="marker"><i class="fas fa-check-circle"></i> Genuine Products</div>
+                        <div class="marker"><i class="fas fa-check-circle"></i> Reliable Supply Chain</div>
+                        <div class="marker"><i class="fas fa-check-circle"></i> Competitive Pricing</div>
+                        <div class="marker"><i class="fas fa-check-circle"></i> Fast Local Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Visit our store or get in touch for bulk orders and inquiries.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>11 Ghatkarpar Marg, Near BJP Office,<br>Ujjain, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/919876543210" target="_blank">Chat with us for orders</a>
+                            </div>
+                        </div>
+                        
+                        <a href="tel:+919876543210" class="btn btn-primary full-width mt-4"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <!-- Google Maps Embed for Ujjain -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117420.25055375549!2d75.70014072877543!3d23.199464624443745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39637469de00ff23%3A0x7f82abdf7899d412!2sUjjain%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-logo">SHREE VINAYAK SURGICAL</div>
-            <p>© 2026 Shree Vinayak Surgical. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo-text footer-logo">
+                    <span class="logo-vinayak">SHREE VINAYAK</span>
+                    <span class="logo-surgical" style="color:white;">SURGICAL</span>
+                </div>
+                <p>Quality • Trust • Care</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>11 Ghatkarpar Marg, Near BJP Office,</p>
+                <p>Ujjain, Madhya Pradesh</p>
+                <a href="tel:+919876543210" class="footer-phone"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shree Vinayak Surgical. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="floating-whatsapp" aria-label="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
